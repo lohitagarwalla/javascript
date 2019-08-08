@@ -1,18 +1,87 @@
 <script>
+//learning basics
+
   // this is a comment line
   console.log('hello lohit')
   var a = 8 // var is used as variable throughout the code
   console.log(a)
   const n = 3  // its value is constant throughout the code
   console.log(n)
-  var c = "my name is"  //string variable 
+  var c = "my name is\n"  //string variable 
   c = c + " lohit"
   console.log(c)
   let d =9; // let is available in local scope only
+  console.log('\n')
   console.log(d)
   var quotient = 3.0/2.0
   console.log(quotient)
 
+//to find the length of a string
+  var str = 'hi what do you do';
+  var l = str.length;
+  console.log(l)
+
+//creating a worldblanks by using functions
+function worldblanks(myNoun, adjective, verb, adverb) {
+  var result = "";
+  result += myNoun + " " + adjective + " " + verb + " " + adverb;
+  return result;
+}
+console.log(worldblanks("dogs","are","very","good"));
+
+// array
+var ourArray = ["lohit", 24]
+
+//nested array
+var newArray = [["lohit", 23], ["nidhi", 20] ]
+console.log(newArray[0][0])
+console.log(newArray[0])
+newArray[1][0] = 'siso' 
+console.log(newArray[1][0])
+
+//append array using push 
+newArray.push(['aman', 23])
+console.log(newArray[2][0])
+
+//remove an element from array using pop
+var removedElement = newArray.pop()
+console.log(newArray[1][0])
+console.log(removedElement)
+
+//adding and removing element at the beginning of array
+var arr = [1,2,3]
+arr.shift()
+console.log(arr) // arr becomes [2,3]
+arr.unshift(5)
+console.log(arr) // arr becomes [5,2,3]
+
+//functions
+function name(){
+  console.log('hey how you doin')
+}
+name()
+name()
+function fun1(a, b){
+  console.log(a - b);
+}
+fun1(5,3)
+fun1(100,45)
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 <body>
+  <div>
+  <h1></h1>
+  </div>
 </body>
