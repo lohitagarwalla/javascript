@@ -67,18 +67,73 @@ function fun1(a, b){
 fun1(5,3)
 fun1(100,45)
 
+//altering a array using function
+function newInline(arr, item) {
+  arr.push(item);
+  return arr.shift();
+}
+
+var newArr = [1,2,3,4,5]
+
+console.log("before: " + JSON.stringify(newArr) )
+console.log(newInline(newArr,6))
+console.log('after: '+ JSON.stringify(newArr))
 
 
+//true and false js
+function trueOrFalse(wasThatTrue){
+  if(wasThatTrue)
+  {
+    console.log("Yes, it was true");
+  }
+  else{
+    console.log('No, It was false')
+  }
+ }
+trueOrFalse(true)
 
+// equality and strictequality
+// 3 == 3     // true
+// 3 == '3'   // true
+// 3 === 3    // true
+// 3 === '3'  // false because in case of strict equality the data type is also checked
 
+//simple return statement for true or false
+function easy(a,b){
+  return a<b
+}
+console.log(easy(100,500))
 
+// undefined
+function undefinedfunc(val){
+  if(val < 0){
+    return undefined;
+  }
+  else
+  {
+    return "positive";
+  }
+  
+}
+console.log(undefinedfunc(-5))
 
+//objects
+var object1 = {
+  "name": "lohit",
+  "last name": 'Agarwalla', // property with gap
+    "age": '23'
+};
+console.log(object1.name)
+object1.newproperty = 'local' //adding a new property to the object
+console.log(object1.newproperty)
+delete object1.age // deleting a property from object
+console.log(object1.age)
+console.log(object1['last name']) // use [] to access property with gap
 
-
-
-
-
-
+//objects
+var student = {
+  
+}
 </script>
 <body>
   <div>
