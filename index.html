@@ -1,5 +1,6 @@
 <script>
 //learning basics
+//these lessons are learned from https://www.youtube.com/watch?v=PkZNo7MFNFg&t=4113s
 
   // this is a comment line
   console.log('hello lohit')
@@ -130,10 +131,29 @@ delete object1.age // deleting a property from object
 console.log(object1.age)
 console.log(object1['last name']) // use [] to access property with gap
 
-//objects
+//objects within an object
 var student = {
-  
+  "2": {
+    "name": "lohit",
+    "branch": "EE"
+  },
+  "ash": {
+    "name": 'ashim',
+    'branch': 'EE',
+    'sports': ['badminton', 'chess']
+  }
 }
+console.log(student.ash.sports[1])
+console.log(student[2].name + " hello how you doin")
+
+//next lessons are on the file named js2.html
+
+
+
+
+
+
+
 </script>
 <body>
   <div>
