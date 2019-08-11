@@ -81,5 +81,54 @@
         return parseInt(str)
     }
     console.log(stringToInteger("23"))
+
+    //terniary operator
+    function greaterThan10(num){
+        return num > 10? "number is greater than 10" : "number is less than 10";
+        //we can simly write:-
+        //return num > 10;
+    }
+    console.log(greaterThan10(3))
+
+    //nested terniary operator
+    function nestedTerniaryOperator(num)
+    {
+        return num > 0 ? "num is +" : num < 0? "num is -" : "num is 0" ;
+    }
+    console.log(nestedTerniaryOperator(-0))
+
+    //arrow functions
+    var sum =  (a,b) => {
+        return a+b;
+    }
+    console.log(sum(1,2))
+
+    // we can also write the above arrow function as:
+    var add = (a,b) => a+b;
+    console.log(add(3,5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 </head><body></body></html>
