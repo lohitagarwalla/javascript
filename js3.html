@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+<script>
+    //creating a contact data
+    var contacts = [
+        {
+            "name" : "lohit",
+            "age" : "24",
+            "phone" : "8876157329",
+            "like" : ["movies", "biking"]
+        },
+        {
+            "name" : "nidhi",
+            "age" : "20",
+            "phone" : "5912348759",
+            "like" : ["songs","cartoon","kurkure"]
+        },
+        {
+            "name" : "AMAN",
+            "age" : "23",
+            "phone" : "213546585",
+            "like" : ["songs","travelling","parties"]
+        },
+        {
+            "name" : "suresh",
+            "age" : "50",
+            "phone" : "9435156776",
+            "like" : ["sweets","news","business"]
+        },
+        {
+            "name" : "saroj",
+            "age" : "47",
+            "phone" : "7576029917",
+            "like" : ["bhajan","7576029917","sweets"]
+        }
+    ]
+    //function to see the valueof the property
+    function toshowvalue(n,prop)
+    {
+        var i = 0;
+        for(i; i<contacts.length;i++)
+        {
+            if(contacts[i].name == n){
+                return contacts[i][prop] || "name exists, property doesn't" 
+            }else if (i == contacts.length - 1)
+            {
+                return "name doesnot exist"
+            }
+        }  
+    }
+    console.log(toshowvalue("lohit","asge"))
+
+    //retutning random numbers between 0 and 1  
+    var randomnumber = Math.random();
+    console.log(randomnumber);
+    console.log(Math.floor(randomnumber*20))
+
+    //generating random whole numbers
+    function randomWholeNumber(){
+        return Math.floor(Math.random() * 300)
+    }
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+    console.log(randomWholeNumber())
+
+    //convert an string to integer using parseInt
+    function stringToInteger(str)
+    {
+        return parseInt(str)
+    }
+    console.log(stringToInteger("23"))
+</script>
+</head><body></body></html>
